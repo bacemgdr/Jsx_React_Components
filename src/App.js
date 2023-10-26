@@ -16,6 +16,8 @@ import Image from "./components/Image";
 import Price from "./components/Price" ;
 import Description from "./components/Description" ;
 
+import SumImage from "./components/sumsung.jpg";
+
 
 
 
@@ -24,7 +26,7 @@ import Description from "./components/Description" ;
 
 
 function App() {
-  const firstName = "Bacem";
+  const firstName = "bacem";
   return (
 
     <>
@@ -38,7 +40,7 @@ function App() {
       </Card.Body>
     </Card>
     
-    {firstName && <img src="./components/sumsung.jpg" alt="sumsung"/>}
+    {firstName && <img src={SumImage} alt ='myImage' width={100} />}
          </>
         
   );
